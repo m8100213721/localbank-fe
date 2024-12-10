@@ -7,6 +7,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { CommonModule } from '@angular/common';
 import { AccountsComponent } from './accounts/accounts.component';
 import { UsersComponent } from './users/users.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent,
@@ -15,9 +16,11 @@ import { UsersComponent } from './users/users.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent, NavigationComponent,
   AccountsComponent, UsersComponent, TransactionsComponent]})
 export class AppModule { }
