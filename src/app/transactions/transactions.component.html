@@ -1,1 +1,30 @@
-<p>transactions works!</p>
+<h2>Transaction Management</h2>
+<!--<button (click)="addTransaction()">Add Transaction</button>
+-->
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Account Number</th>
+      <th>Amount</th>
+      <th>Date</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactions">
+      <td>{{ transaction.id }}</td>
+      <td>{{ transaction.accountNumber }}</td>
+      <td>{{ transaction.amount }}</td>
+      <td>{{ transaction.date }}</td>
+      <td>{{ transaction.status }}</td>
+      <!--
+      <td>
+        <button (click)="editTransaction(transaction)">Edit</button>
+        <button (click)="deleteTransaction(transaction.id)">Delete</button>
+      </td>
+      -->
+    </tr>
+  </tbody>
+</table>

@@ -1,1 +1,24 @@
-<p>users works!</p>
+<h2>User Management</h2>
+<button (click)="addUser()">Add User</button>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>
+        <button (click)="editUser(user)">Edit</button>
+        <button (click)="deleteUser(user.id)">Delete</button>
+        <button (click)="viewUserAccounts(user.id)">View Accounts</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,1 +1,26 @@
-<p>accounts works!</p>
+<h2>Account Management</h2>
+<button (click)="addAccount()">Add Account</button>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Account Number</th>
+      <th>Balance</th>
+      <th>User</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let account of accounts">
+      <td>{{ account.id }}</td>
+      <td>{{ account.accountNumber }}</td>
+      <td>{{ account.balance }}</td>
+      <td>{{ account.user }}</td>
+      <td>
+        <button (click)="editAccount(account)">Edit</button>
+        <button (click)="deleteAccount(account.id)">Delete</button>
+        <button (click)="viewTransactions(account.id)">View Transactions</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
