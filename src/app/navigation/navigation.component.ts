@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
-  imports: [],
+  standalone: false,
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss'
 })
