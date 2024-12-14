@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Transaction } from '../../models/transaction';
 
 @Component({
   selector: 'app-transactions',
@@ -14,5 +15,3 @@ export class TransactionsComponent {
   constructor() { }
 
 }
-
-interface Transaction { id: number; accountNumber: string; amount: number; date: string; status: string; }

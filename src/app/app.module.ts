@@ -2,16 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TransactionsComponent } from './transactions/transactions.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { CommonModule } from '@angular/common';
-import { AccountsComponent } from './accounts/accounts.component';
-import { UsersComponent } from './users/users.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { AccountsComponent } from './components/accounts/accounts.component';
+import { UsersComponent } from './components/users/users.component';
+import { TransactionsComponent } from './components/transactions/transactions.component';
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent,
