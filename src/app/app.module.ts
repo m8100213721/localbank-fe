@@ -11,10 +11,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { AccountsComponent } from './components/accounts/accounts.component';
 import { UsersComponent } from './components/users/users.component';
 import { TransactionsComponent } from './components/transactions/transactions.component';
+import { AccountListComponent } from "./components/account-list/account-list.component";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent,
-    AccountsComponent, UsersComponent, TransactionsComponent
+    AccountsComponent, UsersComponent, TransactionsComponent,
+    AccountListComponent
   ],
   imports: [
     BrowserModule,
@@ -22,8 +25,9 @@ import { TransactionsComponent } from './components/transactions/transactions.co
     AppRoutingModule,
     MatTabsModule,
     MatButtonModule,
-    MatToolbarModule
-  ],
+    MatToolbarModule,
+    HttpClientModule
+],
   providers: [
     provideAnimationsAsync()
   ],

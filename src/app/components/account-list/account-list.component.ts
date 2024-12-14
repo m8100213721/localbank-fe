@@ -4,7 +4,7 @@ import { AccountService } from '../../services/account.service';
 
 @Component({
   selector: 'app-account-list',
-  imports: [],
+  standalone: false,
   templateUrl: './account-list.component.html',
   styleUrl: './account-list.component.scss'
 })
