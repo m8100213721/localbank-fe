@@ -16,8 +16,8 @@
       <td>{{ user.email }}</td>
       <td>
         <button (click)="editUser(user)">Edit</button>
-        <button (click)="deleteUser(user.id)">Delete</button>
-        <button (click)="viewUserAccounts(user.id)">View Accounts</button>
+        <button (click)="deleteUser(user?.id ?? 0)">Delete</button>
+        <button (click)="viewUserAccounts(user?.id ?? 0)">View Accounts</button>
       </td>
     </tr>
   </tbody>

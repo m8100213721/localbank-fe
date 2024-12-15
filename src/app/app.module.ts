@@ -13,6 +13,7 @@ import { UsersComponent } from './components/users/users.component';
 import { TransactionsComponent } from './components/transactions/transactions.component';
 import { AccountListComponent } from "./components/account-list/account-list.component";
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent,
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatTabsModule,
     MatButtonModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 ],
   providers: [
     provideAnimationsAsync()

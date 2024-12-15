@@ -9,8 +9,8 @@ import { User } from '../../models/user';
 })
 export class UsersComponent {
   users: User[] = [
-    { id: 1, name: 'John Doe', email: 'john@example.com' },
-    { id: 2, name: 'Jane Doe', email: 'jane@example.com' }];
+    { id: 1, name: 'John Doe', email: 'john@example.com', username:'test' },
+    { id: 2, name: 'Jane Doe', email: 'jane@example.com', username:'test'}];
   constructor() { }
   ngOnInit(): void { }
   addUser(): void {

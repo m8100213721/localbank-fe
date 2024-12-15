@@ -1,6 +1,8 @@
+import { User } from "./user";
+
 export interface Account { 
-    id: number; 
+    id?: number; 
     accountNumber: string; 
     balance: number; 
-    user: string; 
+    user: User;
 }

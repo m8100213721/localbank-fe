@@ -10,7 +10,13 @@ export class AccountService {
   private apiUrl = 'http://localhost:8080/accounts';
   constructor(private http: HttpClient) { }
   getAccounts(): Observable<Account[]> { return this.http.get<Account[]>(this.apiUrl); }
+  getAccount(accountId: string): Observable<Account> { return this.http.
+    get<Account>(`${this.apiUrl}/${accountId}`); 
+  }
   createAccount(account: Account): Observable<Account> {
     return this.http.post<Account>(this.apiUrl, account);
+  }
+  updateAccount(account: Account): Observable<Account>{
+    return this.http.put<Account>(`${this.apiUrl}/${account.id}`, account);
   }
 }

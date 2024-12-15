@@ -16,4 +16,16 @@ export class AccountListComponent {
       this.accounts = data; 
     }); 
   }
+  addAccount(): void { 
+    // Implement add account functionality 
+  } 
+  editAccount(account: Account): void { 
+    // Implement edit account functionality 
+  } 
+  deleteAccount(id: number): void { 
+    // Implement delete account functionality 
+  } 
+  viewTransactions(id: number): void { 
+    // Implement view transactions functionality 
+  }
 }
