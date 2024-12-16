@@ -14,7 +14,7 @@ export class AccountsComponent {
     { id: 1, accountNumber: 'ACC123', balance: 1000, user: { id: 1, name: 'John Doe', email: 'john@example.com', username:'test' } }, 
     { id: 2, accountNumber: 'ACC124', balance: 2000, user: { id: 2, name: 'Jane Doe', email: 'jane@example.com', username:'test 2'} }]; 
   */
-  account: Account = { accountNumber: '', balance: 0, user: { name: '', email: '', username: '' } };
+  account: Account = { accountNumber: '', accountType: '', balance: 0, user: { name: '', email: '', username: '' } };
   isEditMode = false;
 
   constructor(private accountService: AccountService,
